@@ -13,12 +13,11 @@ while run:
     root.config(bg = '#E7FFFF')
     count = 0
     win_count = 0 
-
-    # choosing word
-    index = random.randint(0,853)
+    
+ # choosing word
     file = open('words.txt','r')
     l = file.readlines()
-    selected_word = l[index].strip('\n')
+    selected_word = random.choice(l)
     
     # creation of word dashes variables
     x = 250
